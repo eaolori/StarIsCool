@@ -14,4 +14,6 @@ def analyze_username(name):
         f"Last character: {last_char}\n"
         f"Contains 'a': {letter_a}"
     )
-print(analyze_username("Star is cool"))
+
+print(analyze_username("  Esther Olori  "))
+# print(analyze_username("Star is cool"))
