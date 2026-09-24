@@ -9,7 +9,13 @@ miscellaneous = int(input("What is your other monthly expense? "))
 def financial_analysis(monthly_income, food, transport, miscellaneous):
     monthly_expenses = food + transport + miscellaneous
     remainder = monthly_income - monthly_expenses
-    savings_percentage = remainder / monthly_income * 100
+    
+    if monthly_income == 0:
+        savings_percentage = 0
+    else:
+        savings_percentage = remainder / monthly_income * 100
+
+    # savings_percentage = remainder / monthly_income * 100
     annual_income = monthly_income * 12
 
     return (
